@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Globe Monitor</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Librería Globe.gl (Vía CDN) -->
+    <script src="https://unpkg.com/globe.gl"></script>
+</head>
+<body>
+    
+    <!-- Contenedor del Título -->
+    <div class="title-overlay">
+        <h1>Monitor Global</h1>
+        <p>Visualización de desastres naturales en tiempo real</p>
+    </div>
+
+    <!-- Contenedor del Globo -->
+    <div id="globeViz"></div>
+
+    <!-- Tooltip Flotante (Se rellena dinámicamente) -->
+    <div id="tooltip" class="disaster-card"></div>
+
+    <!-- Carga secuencial de scripts (Datos primero, luego lógica) -->
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
