@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" href="favicon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disaster Globe Monitor</title>
@@ -9,6 +10,9 @@
     
     <!-- Librería Globe.gl (Vía CDN) -->
     <script src="https://unpkg.com/globe.gl"></script>
+    <!-- Librería Axios para solicitudes HTTP (Vía CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 <body>
     
@@ -25,7 +29,7 @@
     <div id="tooltip" class="disaster-card"></div>
 
     <!-- Carga secuencial de scripts (Datos primero, luego lógica) -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+    <script type="module" src="data.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
