@@ -40,7 +40,7 @@ function processData(data){
 const fromdate = '2025-09-01'; // Fecha de inicio fija
 const todate = new Date().toISOString().split('T')[0]; // Obtener la fecha actual en formato YYYY-MM-DD
 // Realizar una solicitud HTTP para obtener los datos del archivo JSON
-axios.get(`http://www.gdacs.org/gdacsapi/api/Events/geteventlist/SEARCH?fromdate=${fromdate}&todate=${todate}`)
+axios.get(`https://www.gdacs.org/gdacsapi/api/Events/geteventlist/SEARCH?fromdate=${fromdate}&todate=${todate}`)
     .then(function (response) {
         const mockDisasters = processData(response.data);
         // Elemento del DOM donde renderizaremos el globo
