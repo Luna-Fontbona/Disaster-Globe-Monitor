@@ -123,14 +123,14 @@ axios.get(`https://www.gdacs.org/gdacsapi/api/Events/geteventlist/SEARCH?fromdat
             <div class="card-section">
               <h4>⚠️ Datos Clave</h4>
               <ul>
-                ${info.keyFacts.slice(0, 2).map(fact => `<li>${fact}</li>`).join('')}
+                ${info.keyFacts.slice(0, 3).map(fact => `<li>${fact}</li>`).join('')}
               </ul>
             </div>
             
             <div class="card-section">
               <h4>🛡️ Preparación</h4>
               <ul>
-                ${info.preparation.slice(0, 2).map(item => `<li>${item}</li>`).join('')}
+                ${info.preparation.slice(0, 3).map(item => `<li>${item}</li>`).join('')}
               </ul>
             </div>
           `;
